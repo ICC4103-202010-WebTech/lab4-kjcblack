@@ -1,4 +1,4 @@
-class CreateEventStats < ActiveRecord::Migration[6.0]
+ class CreateEventStats < ActiveRecord::Migration[6.0]
   def change
     create_table :event_stats do |t|
       t.references :event, index: { unique: true }, foreign_key: true
